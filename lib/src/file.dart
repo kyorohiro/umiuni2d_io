@@ -27,6 +27,7 @@ abstract class FileSystem {
   Future<bool> isFile(String path);
   Future<bool> isDirectory(String path);
   Future<Entry> wd();
+  Future<FileSystem> cd(String path);
   Future<File> open(String path);
   Future<Entry> getHomeDirectory();
 }
