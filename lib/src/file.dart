@@ -26,7 +26,7 @@ abstract class FileSystem {
   Stream<Entry> ls(String path);
   Future<bool> isFile(String path);
   Future<bool> isDirectory(String path);
-
+  Future<Entry> wd();
   Future<File> open(String path);
   Future<Entry> getHomeDirectory();
 }
