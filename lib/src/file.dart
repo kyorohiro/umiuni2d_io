@@ -12,6 +12,7 @@ abstract class Directory extends Entry {
 }
 
 abstract class File extends Entry {
+  Future<File> open();
   Future<int> writeAsBytes(List<int> buffer, int offset);
   Future<List<int>> readAsBytes(int offset, int length);
   Future<int> getLength();
