@@ -3,9 +3,8 @@ part of umiuni2d_io;
 abstract class Entry {
   String get name;
   String get path;
-  Future<bool> isDir();
+  Future<bool> isDirectory();
   Future<bool> isFile();
-  Future<bool> exists();
 }
 
 abstract class Directory extends Entry {
